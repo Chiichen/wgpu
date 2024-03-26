@@ -84,7 +84,7 @@ impl Instance {
                         Some(instance)
                     }
                     Err(err) => {
-                        log::debug!(
+                        log::error!(
                             "Instance::new: failed to create {:?} backend: {:?}",
                             A::VARIANT,
                             err
